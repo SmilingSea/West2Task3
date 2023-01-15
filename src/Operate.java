@@ -1,4 +1,12 @@
-package PACKAGE_NAME;public class Operate {
+package PACKAGE_NAME;
+
+
+
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.Statement;
+
+public class Operate {
   public static void main(String[] args) {
         //测试向数据库中添加学生信息
         insert("7","李贺","男","3","2022-9-1");
@@ -12,17 +20,7 @@ package PACKAGE_NAME;public class Operate {
         //查找某班级内全部所有同学的全部信息，通过分页让每一页只显示五个同学的信息
         select("1");
 
-
-
-
-
     }
-
-
-
-
-
-
 
 
     //插入学生以及相关信息的方法
